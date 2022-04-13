@@ -9,7 +9,7 @@ const path = require("path");
 app.use(express.static("public"));
 
 // Ponemos a escuchar el servidor
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3030, () => {
     console.log("Servidor corriendo en http://localhost:3030")
 });
 
