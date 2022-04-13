@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <title>Login</title>
+</head>
+
+<body>
+          <header>
+                    <div class="top-header">
+                              <div class="logo">
+                                        <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                              </div>
+                              <div class="barraBusqueda">
+                                        <!-- Barra de busqueda -->
+                                        <input class="buscador" type="search" id="busqueda"
+                                                  placeholder="Buscar productos, marcas y más" />
+                                        <!-- iconito lupa de la barra de busqueda -->
+                                        <div class="submit"><i class="fa fa-search"></i></div>
+                              </div>
+                              <!--iconito de mano-->
+                              <p class="mano-dinero"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin
+                                        tarjeta de crédito
+                              </p>
+                    </div>
+                    <nav>
+                              <div class="barraNavegacion">
+                                        <div class="barraNavegacion1">
+                                                  <ul>
+                                                            <li class="ofertas"><a href="#">Ofertas</a></li>
+                                                            <li class="tiendas"><a href="#">Tiendas Oficiales</a></li>
+                                                            <li class="vender"><a href="#">Vender</a></li>
+                                                            <li class="ayuda"><a href="#">Ayuda</a></li>
+                                                  </ul>
+                                        </div>
+
+
+                                        <div class="barraNavegacion2">
+                                                  <ul>
+
+                                                            <li class="cuenta"><a href="/register">Creá tu cuenta<i
+                                                                                          class="fas fa-address-card"></i>
+                                                                                <!--iconito de registro--></a></li>
+                                                            <li class="ingresa"><a href="/login">Ingresá<i
+                                                                                          class="fas fa-sign-in-alt"></i>
+                                                                                <!--iconito de ingreso--></a></li>
+                                                            <li class="compras"><a href="#">Mis compras<i
+                                                                                          class="fas fa-shopping-basket"></i>
+                                                                                <!--iconito de canasta--></a> </li>
+
+                                                  </ul>
+                                        </div>
+                              </div>
+                    </nav>
+                    <div class="burger-menu">
+                              <i class="fa fa-bars burger"></i>
+                    </div>
+          </header>
+
+
+
+          <main class="login">
+                    <form action="/login" method="POST">
+                              <input type="text" name="Usuario" placeholder="Nombre de usuario">
+                              <input type="password" name="pass" placeholder="Elegi tu contraseña">
+                              <input type="submit" value="Enviar">
+                    </form>
+
+
+          </main>
+
+
+          <footer> </footer>
+</body>
+
+</html>
