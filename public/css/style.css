@@ -120,6 +120,7 @@ article div.main-article {
 
 .descripcion {
         font-size: 16px;
+        font-weight: bold;
 }
 
 main {
@@ -208,22 +209,9 @@ footer section i {
 }
 /* ML 7 */
 
-main article p{
+main article div p.descripcion{
         display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ML 7 */
 @media (min-width: 361px) {
         header nav ul {
@@ -234,10 +222,6 @@ main article p{
         main section article .descripcion {
                 display: block;
 
-        }
-
-        main section article {
-                box-shadow: 0px 0px 10px rgb(100, 100, 100);
         }
 
         main section article {
@@ -259,6 +243,27 @@ main article p{
         .precio,
         .descuentos {
                 width: 50%;
+        }
+
+        .ConjuntoDescriptivo .descripcion{
+                display: none;
+        }
+
+        .ConjuntoDescriptivo:hover .descripcion{
+                display: block;
+                padding-top: 1rem;
+        }
+        
+        main .article{
+                box-shadow: none;
+        }
+
+        main section article:hover {
+                box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+        
+         .precioYdescuento i:hover{
+                transform: rotate(-90deg);
         }
 }
 
@@ -298,6 +303,7 @@ main article p{
                 display: flex;
                 flex-wrap: nowrap;
                 padding: 10px;
+                margin: 10px;
 
         }
 
@@ -305,6 +311,7 @@ main article p{
                 display: flex;
                 flex-wrap: nowrap;
                 padding: 10px;
+                margin: 10px;
 
         }
 
@@ -324,10 +331,8 @@ main article p{
                 width: 47%;
         }
 
+       
 }
-
-
-
 
 @media (min-width: 1023px) {
 
@@ -342,8 +347,5 @@ main article p{
         .article {
                 width: 23%;
         }
-         
-      
-
 
 }
